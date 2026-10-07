@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MiChamba × Sinergéticos — Content &amp; Growth Partnership Proposal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Content and growth partnership proposal: Sinergéticos' media engine — podcast and social content — put to work for MiChamba, 100 million people reached per year, guaranteed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --void:#0a1512;
+    --panel:#0f1d19;
+    --panel-2:#16281f;
+    --coral:#e3795f;
+    --coral-dim:#b85c46;
+    --mint:#5ac9ac;
+    --paper:#f5f3ef;
+    --smoke:#a3ada6;
+    --smoke-dim:#6d7871;
+    --line:rgba(245,243,239,0.1);
+    --line-strong:rgba(245,243,239,0.18);
+    --maxw:1160px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--void);color:var(--paper);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:16px;line-height:1.6;overflow-x:hidden;
+  }
+  ::selection{background:var(--coral);color:var(--void);}
+
+  h1,h2,h3,h4{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.01em;
+    margin:0;text-wrap:balance;
+  }
+
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+
+  .eyebrow{
+    font-family:'Space Grotesk',sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:0.14em;font-size:0.78rem;color:var(--coral);
+  }
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  /* ---------- nav ---------- */
+  header.nav{
+    position:fixed;top:0;left:0;right:0;z-index:900;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 28px;background:rgba(10,21,18,0.78);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .brand-mark{display:flex;align-items:center;gap:12px;white-space:nowrap;font-family:'Space Grotesk';font-weight:700;font-size:1.02rem;}
+  .brand-mark .x{color:var(--smoke);font-weight:400;font-size:0.9rem;}
+  .brand-mark img{height:24px;width:auto;display:block;}
+  nav.links{display:flex;gap:26px;}
+  nav.links a{
+    font-family:'Space Grotesk';font-weight:600;text-transform:uppercase;
+    font-size:0.78rem;letter-spacing:0.06em;color:var(--smoke);text-decoration:none;
+    padding:6px 0;border-bottom:2px solid transparent;transition:color .2s, border-color .2s;
+  }
+  nav.links a:hover{color:var(--paper);border-color:var(--coral);}
+  .nav-cta{
+    font-family:'Space Grotesk';font-weight:600;text-transform:uppercase;font-size:0.78rem;letter-spacing:0.05em;
+    background:var(--coral);color:var(--void);padding:9px 18px;border-radius:3px;text-decoration:none;
+  }
+  .nav-right{display:flex;align-items:center;gap:14px;}
+  .lang-btn{
+    font-family:'Space Grotesk';font-weight:600;text-transform:uppercase;font-size:0.74rem;letter-spacing:0.05em;
+    background:none;border:1px solid var(--line-strong);color:var(--paper);padding:8px 14px;border-radius:3px;
+    cursor:pointer;transition:border-color .2s ease,color .2s ease;
+  }
+  .lang-btn:hover{border-color:var(--coral);color:var(--coral);}
+  @media (max-width:900px){ nav.links{display:none;} .nav-cta{display:none;} }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;min-height:88svh;display:flex;flex-direction:column;justify-content:flex-end;
+    padding-top:120px;background:
+      radial-gradient(70% 55% at 50% 0%, rgba(90,201,172,0.12), transparent 60%),
+      radial-gradient(60% 50% at 85% 20%, rgba(227,121,95,0.12), transparent 60%),
+      var(--void);
+  }
+  .hero-inner{position:relative;z-index:2;padding-bottom:40px;}
+  .hero-tag{
+    text-align:center;font-family:'Space Grotesk';font-weight:600;color:var(--mint);
+    text-transform:uppercase;letter-spacing:0.14em;font-size:clamp(0.68rem,2.6vw,0.85rem);
+    padding:0 12px;max-width:34ch;margin:0 auto;
+  }
+  .hero-headline{
+    color:var(--paper);font-size:clamp(2rem,6vw,4.4rem);line-height:1.02;
+    text-align:center;text-wrap:balance;margin:18px auto 0;max-width:18ch;
+  }
+  .hero-headline .hl{color:var(--coral);}
+  .hero-headline .hl2{color:var(--mint);}
+  .hero-sub{max-width:620px;margin:24px auto 0;text-align:center;color:var(--smoke);font-size:1.08rem;}
+  .hero-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px;margin-top:32px;padding:0 8px;}
+  .meta-chip{
+    display:flex;align-items:center;gap:8px;border:1px solid var(--line-strong);border-radius:999px;
+    padding:9px 18px;font-family:'Space Grotesk';font-weight:600;font-size:0.84rem;letter-spacing:0.02em;
+    color:var(--paper);background:rgba(22,40,31,0.5);white-space:nowrap;
+  }
+  .meta-chip .dot{width:6px;height:6px;border-radius:50%;background:var(--coral);}
+  .hero-ctas{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap;}
+  .btn{
+    font-family:'Space Grotesk';font-weight:600;text-transform:uppercase;letter-spacing:0.04em;font-size:0.9rem;
+    padding:14px 28px;border-radius:3px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;
+    transition:transform .18s ease, background .18s ease, color .18s ease;border:none;cursor:pointer;
+  }
+  .btn-primary{background:var(--coral);color:var(--void);}
+  .btn-primary:hover{background:#ec8a70;transform:translateY(-2px);}
+  .btn-ghost{border:1px solid var(--line-strong);color:var(--paper);background:transparent;}
+  .btn-ghost:hover{border-color:var(--mint);color:var(--mint);transform:translateY(-2px);}
+  .hero-presented{
+    margin-top:44px;text-align:center;color:var(--smoke-dim);font-family:'Space Grotesk';
+    font-size:0.78rem;letter-spacing:0.04em;text-transform:uppercase;
+  }
+  .hero-presented strong{color:var(--smoke);}
+  @media (max-width:480px){ .hero-meta{flex-direction:column;align-items:center;} .meta-chip{font-size:0.74rem;padding:8px 14px;} }
+
+  /* ---------- section shell ---------- */
+  section{padding:80px 0;position:relative;}
+  section.on-panel{background:var(--panel);}
+  .section-head{max-width:680px;margin-bottom:52px;}
+  .section-head h2{font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.02;margin-top:10px;}
+  .section-head p{color:var(--smoke);margin-top:16px;font-size:1.05rem;max-width:60ch;}
+  .rule{height:1px;background:var(--line);border:0;margin:0;}
+
+  /* ---------- objetivo ---------- */
+  .obj-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:start;}
+  .obj-photo{position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--line-strong);}
+  .obj-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+  .obj-lede{font-size:1.2rem;color:var(--paper);max-width:56ch;}
+  .obj-lede strong{color:var(--mint);}
+  .obj-list{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:14px;}
+  .obj-list li{display:flex;gap:12px;align-items:flex-start;color:var(--smoke);font-size:0.98rem;}
+  .obj-list .ico{color:var(--coral);font-family:'Space Grotesk';font-weight:700;flex-shrink:0;}
+  .integrations{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);}
+  .integrations .eyebrow{display:block;margin-bottom:12px;}
+  .chip-list{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none;}
+  .chip-list li{
+    font-family:'Space Grotesk';font-size:0.84rem;letter-spacing:0.02em;color:var(--smoke);
+    border:1px solid var(--line);padding:7px 13px;border-radius:999px;
+  }
+  @media (max-width:860px){ .obj-grid{grid-template-columns:1fr;} }
+
+  /* ---------- track record stats ---------- */
+  .stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px;}
+  .stat-cell{background:var(--void);padding:30px 22px;text-align:center;}
+  section.on-panel .stat-cell{background:var(--panel);}
+  .stat-cell .num{font-family:'Space Grotesk';font-weight:700;font-size:clamp(1.8rem,3.6vw,2.6rem);color:var(--coral);line-height:1;}
+  .stat-cell .lbl{margin-top:10px;font-family:'Space Grotesk';text-transform:uppercase;letter-spacing:0.05em;color:var(--smoke);font-size:0.78rem;}
+  .platform-row{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-top:none;}
+  .platform-cell{background:var(--void);padding:24px 16px;text-align:center;}
+  section.on-panel .platform-cell{background:var(--panel);}
+  .platform-cell .num{font-family:'Space Grotesk';font-weight:700;font-size:1.5rem;color:var(--mint);}
+  .platform-cell .lbl{margin-top:6px;font-family:'Space Grotesk';text-transform:uppercase;letter-spacing:0.04em;color:var(--smoke);font-size:0.72rem;}
+  @media (max-width:860px){ .stat-row{grid-template-columns:repeat(2,1fr);} .platform-row{grid-template-columns:repeat(2,1fr);} }
+
+  /* ---------- agents ---------- */
+  .agent-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px;}
+  .agent-card{background:var(--void);padding:28px 20px;}
+  section.on-panel .agent-card{background:var(--panel);}
+  .agent-initial{
+    width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+    font-family:'Space Grotesk';font-weight:700;font-size:1.1rem;background:var(--panel-2);color:var(--mint);
+    margin-bottom:16px;
+  }
+  .agent-card:nth-child(odd) .agent-initial{color:var(--coral);}
+  .agent-name{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;}
+  .agent-role{color:var(--smoke);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.05em;font-family:'Space Grotesk';font-weight:600;margin-top:4px;}
+  .agent-series{color:var(--smoke);font-size:0.88rem;margin-top:14px;line-height:1.5;}
+  @media (max-width:900px){ .agent-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .agent-grid{grid-template-columns:1fr;} }
+
+  /* ---------- strategy list ---------- */
+  .strategy-list{display:flex;flex-direction:column;gap:0;margin-top:8px;}
+  .strategy-row{
+    display:grid;grid-template-columns:56px 1fr;gap:22px;padding:28px 0;border-top:1px solid var(--line);
+  }
+  .strategy-row:last-child{border-bottom:1px solid var(--line);}
+  .strategy-num{font-family:'Space Grotesk';font-weight:700;font-size:1.6rem;color:var(--coral);}
+  .strategy-body h3{font-size:1.2rem;}
+  .strategy-body p{color:var(--smoke);margin-top:8px;font-size:0.96rem;max-width:62ch;}
+
+  /* ---------- investment ---------- */
+  .invest-card{
+    max-width:640px;margin:8px auto 0;border:1px solid var(--mint);border-radius:10px;padding:52px 40px;text-align:center;
+    background:linear-gradient(165deg,var(--panel-2),var(--panel) 65%);
+  }
+  .invest-tier{font-family:'Space Grotesk';font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--mint);font-size:0.82rem;}
+  .invest-scope{font-family:'Space Grotesk';font-weight:700;font-size:clamp(1.4rem,3.2vw,1.9rem);margin-top:12px;}
+  .invest-price{font-family:'Space Grotesk';font-weight:700;font-size:clamp(2.6rem,6.6vw,3.8rem);margin-top:22px;color:var(--paper);}
+  .invest-price-sub{color:var(--smoke);font-size:0.92rem;margin-top:6px;font-family:'Space Grotesk';}
+  .invest-note{color:var(--smoke);margin-top:20px;font-size:0.95rem;max-width:44ch;margin-left:auto;margin-right:auto;}
+  .invest-highlight{color:var(--coral);font-weight:600;}
+  .invest-card .btn{margin-top:28px;}
+
+  /* ---------- closing ---------- */
+  .closing{text-align:center;padding:90px 0;background:radial-gradient(60% 80% at 50% 0%, rgba(90,201,172,0.1), var(--void) 70%);}
+  .closing .eyebrow{display:block;margin-bottom:14px;}
+  .closing h2{font-size:clamp(2.2rem,5.6vw,4rem);}
+  .closing h2 .hl{color:var(--coral);}
+  .closing p{color:var(--smoke);max-width:56ch;margin:20px auto 0;}
+  .closing .hero-ctas{margin-top:38px;}
+  .closing-contact{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .contact-pill{
+    border:1px solid var(--line-strong);border-radius:999px;padding:10px 20px;font-size:0.9rem;
+    font-family:'Space Grotesk';font-weight:600;text-decoration:none;color:var(--paper);
+    transition:border-color .2s, color .2s;
+  }
+  .contact-pill:hover{border-color:var(--coral);color:var(--coral);}
+  .closing-name{color:var(--smoke-dim);font-size:0.85rem;font-family:'Space Grotesk';letter-spacing:0.02em;}
+
+  footer{border-top:1px solid var(--line);padding:32px 0;}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+  footer .fine{color:var(--smoke-dim);font-size:0.8rem;}
+  footer img{height:18px;width:auto;opacity:0.8;}
+
+  @media (max-width:860px){
+    .obj-grid{grid-template-columns:1fr;}
+    .stat-row{grid-template-columns:1fr;}
+    .strategy-row{grid-template-columns:1fr;gap:8px;}
+    section{padding:56px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="brand-mark">
+    SINERGÉTICOS <span class="x">×</span>
+    <img src="assets/michamba-logo.png" alt="MiChamba">
+  </div>
+  <nav class="links">
+    <a href="#objetivo" data-i18n="nav-objetivo">Objective</a>
+    <a href="#trackrecord" data-i18n="nav-trackrecord">Track Record</a>
+    <a href="#agentes" data-i18n="nav-agentes">The Agents</a>
+    <a href="#estrategia" data-i18n="nav-estrategia">Strategy</a>
+    <a href="#alcance" data-i18n="nav-alcance">Reach</a>
+    <a href="#inversion" data-i18n="nav-inversion">Investment</a>
+  </nav>
+  <div class="nav-right">
+    <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">ES</button>
+    <a href="#contacto" class="nav-cta" data-i18n="nav-cta">Contact</a>
+  </div>
+</header>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-inner wrap">
+    <div class="hero-tag" data-i18n="hero-tag">Proposal · Content &amp; Growth Partnership</div>
+    <h1 class="hero-headline">MICHAMBA <span class="hl">×</span> <span class="hl2">SINERGÉTICOS</span> GROWTH PARTNERSHIP</h1>
+    <p class="hero-sub" data-i18n="hero-sub">
+      Sinergéticos puts its full media engine — podcast, social content and audience — to work
+      growing MiChamba's brand in front of <strong style="color:var(--paper);">100 million people
+      a year</strong>, guaranteed.
+    </p>
+    <div class="hero-meta">
+      <div class="meta-chip"><span class="dot"></span><span data-i18n="hero-meta-1">100M people/year guaranteed</span></div>
+      <div class="meta-chip"><span class="dot"></span><span data-i18n="hero-meta-2">12-month partnership</span></div>
+      <div class="meta-chip"><span class="dot"></span><span data-i18n="hero-meta-3">KPI-backed</span></div>
+    </div>
+    <div class="hero-ctas">
+      <a href="#contacto" class="btn btn-primary" data-i18n="hero-cta-primary">Start the Partnership <span>→</span></a>
+      <a href="#trackrecord" class="btn btn-ghost" data-i18n="hero-cta-secondary">See the Track Record</a>
+    </div>
+    <div class="hero-presented" data-i18n="hero-presented">Presented by <strong>Régulo Castro Gómez</strong> · LATAM B2B Development Manager · October 2026</div>
+  </div>
+</section>
+
+<!-- ─── OBJETIVO ─── -->
+<section id="objetivo">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="objetivo-eyebrow">The Opportunity</div>
+      <h2 data-i18n="objetivo-h2">MICHAMBA HAS THE PRODUCT. <span class="hl" style="color:var(--mint);">WE BRING THE AUDIENCE.</span></h2>
+    </div>
+    <div class="obj-grid">
+      <div class="obj-photo">
+        <img src="assets/hero-jorge.jpg" alt="Jorge Serratos">
+      </div>
+      <div>
+        <p class="obj-lede" data-i18n="obj-lede">
+          <strong>MiChamba</strong> puts AI agents to work directly inside WhatsApp — assigning
+          tasks, validating deliveries and coordinating teams without a single new app install.
+          It's a genuinely new way of running operations. The gap isn't the product — it's
+          getting it in front of the business owners who need it, at scale.
+        </p>
+        <ul class="obj-list">
+          <li><span class="ico">→</span><span data-i18n="obj-li-1">5 specialized AI agents — María, Max, Luca, Susana and Bruno — covering tasks, surveillance, fleets, inspections and alerts.</span></li>
+          <li><span class="ico">→</span><span data-i18n="obj-li-2">No new apps: everything runs where teams already work, inside WhatsApp.</span></li>
+          <li><span class="ico">→</span><span data-i18n="obj-li-3">Connects directly with the systems businesses already run on.</span></li>
+        </ul>
+        <div class="integrations">
+          <span class="eyebrow" data-i18n="integrations-label">Connects With</span>
+          <ul class="chip-list">
+            <li>CRM</li>
+            <li>ERP</li>
+            <li>Contpaq</li>
+            <li>Odoo</li>
+            <li>HubSpot</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TRACK RECORD ─── -->
+<section class="on-panel" id="trackrecord">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="trackrecord-eyebrow">The Proof</div>
+      <h2 data-i18n="trackrecord-h2">THE SAME ENGINE THAT BUILT <span class="hl" style="color:var(--coral);">SINERGÉTICOS</span></h2>
+      <p data-i18n="trackrecord-p">This isn't a media plan on paper — it's the exact machine Jorge Serratos used to build a +20M-follower, 400M-monthly-reach business media brand from zero. We're pointing it at MiChamba.</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-cell"><div class="num">+500</div><div class="lbl" data-i18n="tr-stat-1">Podcast episodes</div></div>
+      <div class="stat-cell"><div class="num">+20M</div><div class="lbl" data-i18n="tr-stat-2">Followers across platforms</div></div>
+      <div class="stat-cell"><div class="num">400M</div><div class="lbl" data-i18n="tr-stat-3">Monthly reach</div></div>
+      <div class="stat-cell"><div class="num">#1</div><div class="lbl" data-i18n="tr-stat-4">Spotify Mexico · Business</div></div>
+    </div>
+    <div class="platform-row">
+      <div class="platform-cell"><div class="num">276M</div><div class="lbl">YouTube</div></div>
+      <div class="platform-cell"><div class="num">260M</div><div class="lbl">Facebook</div></div>
+      <div class="platform-cell"><div class="num">66M</div><div class="lbl">TikTok</div></div>
+      <div class="platform-cell"><div class="num">24M</div><div class="lbl">Instagram</div></div>
+      <div class="platform-cell"><div class="num">20.5M</div><div class="lbl">Spotify</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── LOS 5 AGENTES ─── -->
+<section id="agentes">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="agentes-eyebrow">Built For MiChamba</div>
+      <h2 data-i18n="agentes-h2">FIVE AGENTS, <span class="hl" style="color:var(--mint);">FIVE CONTENT SERIES</span></h2>
+      <p data-i18n="agentes-p">Instead of generic brand content, each MiChamba agent anchors its own recurring series — real, specific, and built around the product itself.</p>
+    </div>
+    <div class="agent-grid">
+      <div class="agent-card">
+        <div class="agent-initial">M</div>
+        <div class="agent-name">María</div>
+        <div class="agent-role" data-i18n="agent-1-role">Tasks</div>
+        <div class="agent-series" data-i18n="agent-1-series">A weekly series following real teams getting tasks assigned and closed out, in real time.</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-initial">M</div>
+        <div class="agent-name">Max</div>
+        <div class="agent-role" data-i18n="agent-2-role">Surveillance</div>
+        <div class="agent-series" data-i18n="agent-2-series">Behind-the-scenes content on how businesses keep operations visible without extra headcount.</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-initial">L</div>
+        <div class="agent-name">Luca</div>
+        <div class="agent-role" data-i18n="agent-3-role">Fleets</div>
+        <div class="agent-series" data-i18n="agent-3-series">A series for logistics and field-service audiences — fleets coordinated straight from WhatsApp.</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-initial">S</div>
+        <div class="agent-name">Susana</div>
+        <div class="agent-role" data-i18n="agent-4-role">Inspections</div>
+        <div class="agent-series" data-i18n="agent-4-series">Short-form content showing inspections validated and closed without a single spreadsheet.</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-initial">B</div>
+        <div class="agent-name">Bruno</div>
+        <div class="agent-role" data-i18n="agent-5-role">Alerts</div>
+        <div class="agent-series" data-i18n="agent-5-series">A series on catching problems before they become costly ones — in real time, on WhatsApp.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ESTRATEGIA ─── -->
+<section class="on-panel" id="estrategia">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="estrategia-eyebrow">The Plan</div>
+      <h2 data-i18n="estrategia-h2">WHAT WE BUILD <span class="hl" style="color:var(--coral);">TOGETHER</span></h2>
+    </div>
+    <div class="strategy-list">
+      <div class="strategy-row">
+        <div class="strategy-num">01</div>
+        <div class="strategy-body">
+          <h3 data-i18n="strat-1-h3">Podcast Integration</h3>
+          <p data-i18n="strat-1-p">A dedicated Sinergéticos episode featuring MiChamba — built as a real story about operations, not a sponsor read.</p>
+        </div>
+      </div>
+      <div class="strategy-row">
+        <div class="strategy-num">02</div>
+        <div class="strategy-body">
+          <h3 data-i18n="strat-2-h3">Always-On Social Content</h3>
+          <p data-i18n="strat-2-p">A continuous content calendar across Instagram, TikTok, YouTube and Facebook, produced and published by the Sinergéticos team.</p>
+        </div>
+      </div>
+      <div class="strategy-row">
+        <div class="strategy-num">03</div>
+        <div class="strategy-body">
+          <h3 data-i18n="strat-3-h3">The Five Agent Series</h3>
+          <p data-i18n="strat-3-p">Recurring content built around María, Max, Luca, Susana and Bruno — turning product features into a content engine on their own.</p>
+        </div>
+      </div>
+      <div class="strategy-row">
+        <div class="strategy-num">04</div>
+        <div class="strategy-body">
+          <h3 data-i18n="strat-4-h3">WhatsApp-Native Storytelling</h3>
+          <p data-i18n="strat-4-p">Content built around where MiChamba actually lives — WhatsApp — instead of a generic app-store pitch.</p>
+        </div>
+      </div>
+      <div class="strategy-row">
+        <div class="strategy-num">05</div>
+        <div class="strategy-body">
+          <h3 data-i18n="strat-5-h3">Real Customer Stories</h3>
+          <p data-i18n="strat-5-p">Case-study style content with real MiChamba customers — the same authentic-testimonial format that built trust for Sinergéticos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ALCANCE / 100M ─── -->
+<section id="alcance">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="alcance-eyebrow">How We Get to 100M</div>
+      <h2 data-i18n="alcance-h2">ONE ENGINE, <span class="hl" style="color:var(--mint);">EVERY CHANNEL</span></h2>
+      <p data-i18n="alcance-p">100 million people reached a year isn't a single post going viral — it's a content engine running across every platform where MiChamba's audience already is.</p>
+    </div>
+    <div class="platform-row" style="border-top:1px solid var(--line);">
+      <div class="platform-cell"><div class="num">YouTube</div><div class="lbl" data-i18n="ch-1">Long-form &amp; interviews</div></div>
+      <div class="platform-cell"><div class="num">TikTok</div><div class="lbl" data-i18n="ch-2">Short-form, high-frequency</div></div>
+      <div class="platform-cell"><div class="num">Instagram</div><div class="lbl" data-i18n="ch-3">Reels &amp; stories</div></div>
+      <div class="platform-cell"><div class="num">Facebook</div><div class="lbl" data-i18n="ch-4">Broad reach</div></div>
+      <div class="platform-cell"><div class="num">Spotify</div><div class="lbl" data-i18n="ch-5">Podcast distribution</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROPUESTA ECONÓMICA / INVESTMENT ─── -->
+<section class="on-panel" id="inversion">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="invest-eyebrow">Investment</div>
+      <h2 data-i18n="invest-h2">GROWTH PARTNERSHIP <span class="hl" style="color:var(--coral);">PROPOSAL</span></h2>
+      <p data-i18n="invest-p">One partnership. A full year of podcast and social content, built to reach 100 million people.</p>
+    </div>
+    <div class="invest-card">
+      <div class="invest-tier">Content &amp; Growth Partner — 12 Months</div>
+      <div class="invest-scope" data-i18n="invest-scope">100M People Reached / Year</div>
+      <div class="invest-price">$1,000,000 <span style="font-size:0.4em;color:var(--smoke);">USD</span></div>
+      <div class="invest-price-sub" data-i18n="invest-price-sub">$83,333 USD / month</div>
+      <p class="invest-note" data-i18n="invest-note">Paid monthly, contingent on agreed KPIs.</p>
+      <p class="invest-note invest-highlight" data-i18n="invest-extra">100 million people reached guaranteed per year.</p>
+      <a href="#contacto" class="btn btn-primary" data-i18n="invest-cta">Request Full Proposal <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CLOSING ─── -->
+<section class="closing" id="contacto">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="closing-eyebrow">Next Step</span>
+    <h2>1 + 1 = <span class="hl">3</span></h2>
+    <p data-i18n="closing-p">
+      Request the full proposal, timeline and KPI framework from Régulo Castro, LATAM business
+      development lead.
+    </p>
+    <div class="hero-ctas">
+      <a href="mailto:rcastro@zigma3.com?subject=Growth%20Partnership%20Proposal%20-%20MiChamba%20x%20Sinerg%C3%A9ticos" class="btn btn-primary" data-i18n="closing-cta-1">Request full proposal</a>
+      <a href="https://wa.me/526861213386" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="closing-cta-2">WhatsApp direct</a>
+    </div>
+    <div class="closing-contact">
+      <a class="contact-pill" href="mailto:rcastro@zigma3.com">rcastro@zigma3.com</a>
+      <a class="contact-pill" href="https://wa.me/526861213386" target="_blank" rel="noopener">+52 686 121 3386</a>
+      <div class="closing-name">Régulo Castro Gómez · LATAM B2B Development Manager</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand-mark">
+      SINERGÉTICOS <span class="x">×</span>
+      <img src="assets/michamba-logo.png" alt="MiChamba">
+    </div>
+    <div class="fine" data-i18n="footer-fine">Confidential proposal for MiChamba · Content &amp; Growth Partnership · Terms subject to confirmation</div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href').slice(1);
+      var target = document.getElementById(id);
+      if(target){
+        e.preventDefault();
+        window.scrollTo({top: target.offsetTop - 76, behavior: 'smooth'});
+      }
+    });
+  });
+
+  var ES = {
+    'nav-objetivo': `Objetivo`,
+    'nav-trackrecord': `Resultados`,
+    'nav-agentes': `Los Agentes`,
+    'nav-estrategia': `Estrategia`,
+    'nav-alcance': `Alcance`,
+    'nav-inversion': `Inversión`,
+    'nav-cta': `Contactar`,
+    'hero-tag': `Propuesta · Alianza de Contenido y Crecimiento`,
+    'hero-sub': `
+      Sinergéticos pone todo su motor de medios — podcast, contenido en redes y audiencia — a
+      trabajar para hacer crecer la marca de MiChamba frente a
+      <strong style="color:var(--paper);">100 millones de personas al año</strong>, garantizado.
+    `,
+    'hero-meta-1': `100M personas/año garantizadas`,
+    'hero-meta-2': `Alianza de 12 meses`,
+    'hero-meta-3': `Respaldado por KPIs`,
+    'hero-cta-primary': `Iniciar la Alianza <span>→</span>`,
+    'hero-cta-secondary': `Ver los Resultados`,
+    'hero-presented': `Presentada por <strong>Régulo Castro Gómez</strong> · LATAM B2B Development Manager · Octubre 2026`,
+    'objetivo-eyebrow': `La Oportunidad`,
+    'objetivo-h2': `MICHAMBA TIENE EL PRODUCTO. <span class="hl" style="color:var(--mint);">NOSOTROS LA AUDIENCIA.</span>`,
+    'obj-lede': `
+          <strong>MiChamba</strong> pone agentes de IA a trabajar directamente dentro de WhatsApp
+          — asignan tareas, validan entregas y coordinan equipos sin instalar una sola app nueva.
+          Es una forma genuinamente nueva de operar. La brecha no es el producto — es ponerlo
+          frente a los dueños de negocio que lo necesitan, a escala.
+        `,
+    'obj-li-1': `5 agentes de IA especializados — María, Max, Luca, Susana y Bruno — para tareas, vigilancia, flotillas, inspecciones y alertas.`,
+    'obj-li-2': `Sin apps nuevas: todo corre donde los equipos ya trabajan, dentro de WhatsApp.`,
+    'obj-li-3': `Se conecta directamente con los sistemas que las empresas ya usan.`,
+    'integrations-label': `Se Conecta Con`,
+    'trackrecord-eyebrow': `La Prueba`,
+    'trackrecord-h2': `EL MISMO MOTOR QUE CONSTRUYÓ <span class="hl" style="color:var(--coral);">SINERGÉTICOS</span>`,
+    'trackrecord-p': `Esto no es un plan de medios en papel — es la misma maquinaria que Jorge Serratos usó para construir, desde cero, una marca de negocios con más de 20M de seguidores y 400M de alcance mensual. La vamos a apuntar hacia MiChamba.`,
+    'tr-stat-1': `Episodios de podcast`,
+    'tr-stat-2': `Seguidores en todas las plataformas`,
+    'tr-stat-3': `Alcance mensual`,
+    'tr-stat-4': `Spotify México · Negocios`,
+    'agentes-eyebrow': `Hecho Para MiChamba`,
+    'agentes-h2': `CINCO AGENTES, <span class="hl" style="color:var(--mint);">CINCO SERIES DE CONTENIDO</span>`,
+    'agentes-p': `En vez de contenido genérico de marca, cada agente de MiChamba encabeza su propia serie recurrente — real, específica, construida alrededor del producto mismo.`,
+    'agent-1-role': `Tareas`,
+    'agent-1-series': `Una serie semanal siguiendo a equipos reales asignando y cerrando tareas en tiempo real.`,
+    'agent-2-role': `Vigilancia`,
+    'agent-2-series': `Contenido detrás de cámaras sobre cómo las empresas mantienen visibilidad operativa sin contratar más personal.`,
+    'agent-3-role': `Flotillas`,
+    'agent-3-series': `Una serie para audiencias de logística y campo — flotillas coordinadas directo desde WhatsApp.`,
+    'agent-4-role': `Inspecciones`,
+    'agent-4-series': `Contenido corto mostrando inspecciones validadas y cerradas sin una sola hoja de cálculo.`,
+    'agent-5-role': `Alertas`,
+    'agent-5-series': `Una serie sobre detectar problemas antes de que salgan caros — en tiempo real, en WhatsApp.`,
+    'estrategia-eyebrow': `El Plan`,
+    'estrategia-h2': `QUÉ CONSTRUIMOS <span class="hl" style="color:var(--coral);">JUNTOS</span>`,
+    'strat-1-h3': `Integración en el Podcast`,
+    'strat-1-p': `Un episodio dedicado de Sinergéticos con MiChamba — construido como una historia real sobre operaciones, no como una lectura de patrocinio.`,
+    'strat-2-h3': `Contenido en Redes Todo el Tiempo`,
+    'strat-2-p': `Un calendario de contenido continuo en Instagram, TikTok, YouTube y Facebook, producido y publicado por el equipo de Sinergéticos.`,
+    'strat-3-h3': `La Serie de los Cinco Agentes`,
+    'strat-3-p': `Contenido recurrente construido alrededor de María, Max, Luca, Susana y Bruno — convirtiendo las funciones del producto en un motor de contenido propio.`,
+    'strat-4-h3': `Storytelling Nativo de WhatsApp`,
+    'strat-4-p': `Contenido construido alrededor de donde realmente vive MiChamba — WhatsApp — en vez de un pitch genérico de app store.`,
+    'strat-5-h3': `Historias Reales de Clientes`,
+    'strat-5-p': `Contenido estilo caso de estudio con clientes reales de MiChamba — el mismo formato de testimonial auténtico que construyó confianza para Sinergéticos.`,
+    'alcance-eyebrow': `Cómo Llegamos a 100M`,
+    'alcance-h2': `UN MOTOR, <span class="hl" style="color:var(--mint);">TODOS LOS CANALES</span>`,
+    'alcance-p': `100 millones de personas alcanzadas al año no es un solo post que se vuelve viral — es un motor de contenido corriendo en cada plataforma donde ya está la audiencia de MiChamba.`,
+    'ch-1': `Formato largo y entrevistas`,
+    'ch-2': `Formato corto, alta frecuencia`,
+    'ch-3': `Reels e historias`,
+    'ch-4': `Alcance masivo`,
+    'ch-5': `Distribución de podcast`,
+    'invest-eyebrow': `Inversión`,
+    'invest-h2': `PROPUESTA DE ALIANZA <span class="hl" style="color:var(--coral);">DE CRECIMIENTO</span>`,
+    'invest-p': `Una sola alianza. Un año completo de podcast y contenido en redes, construido para alcanzar 100 millones de personas.`,
+    'invest-scope': `100M Personas Alcanzadas / Año`,
+    'invest-price-sub': `$83,333 USD / mes`,
+    'invest-note': `Pagado mensualmente, sujeto a los KPIs acordados.`,
+    'invest-extra': `100 millones de personas alcanzadas garantizadas al año.`,
+    'invest-cta': `Solicitar Propuesta Completa <span>→</span>`,
+    'closing-eyebrow': `Siguiente paso`,
+    'closing-p': `
+      Solicita la propuesta completa, el calendario y el marco de KPIs con Régulo Castro,
+      encargado de desarrollo de negocio LATAM.
+    `,
+    'closing-cta-1': `Solicitar propuesta completa`,
+    'closing-cta-2': `WhatsApp directo`,
+    'footer-fine': `Propuesta confidencial para MiChamba · Alianza de Contenido y Crecimiento · Términos sujetos a confirmación`
+  };
+
+  var currentLang = 'en';
+  var titleEN = document.title;
+  var titleES = `MiChamba × Sinergéticos — Propuesta de Alianza de Contenido y Crecimiento`;
+  var langBtn = document.getElementById('langBtn');
+
+  function setLang(lang){
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      if(el.dataset.enCache === undefined){
+        el.dataset.enCache = el.innerHTML;
+      }
+      var key = el.getAttribute('data-i18n');
+      if(lang === 'es' && ES[key] !== undefined){
+        el.innerHTML = ES[key];
+      } else {
+        el.innerHTML = el.dataset.enCache;
+      }
+    });
+    document.title = lang === 'es' ? titleES : titleEN;
+    langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
+  }
+
+  langBtn.addEventListener('click', function(){
+    setLang(currentLang === 'en' ? 'es' : 'en');
+  });
+</script>
+
+</body>
+</html>
